@@ -24,6 +24,7 @@ test('本地来源按接口回放原始资料', async () => {
     method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(input),
   });
   try {
+    assert.deepEqual(await data('/health'), { status: 'ready' });
     assert.equal((await data('/clock')).step, 0);
     await exercise({ base, request, move, data, post, assert });
   } finally {

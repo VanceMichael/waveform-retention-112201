@@ -35,6 +35,9 @@ export function createSource(scenario = 'main') {
       '<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>来源工作台</title><body>' +
       content + '</body></html>', { 'Content-Type': 'text/html; charset=utf-8' });
     try {
+      if (req.method === 'GET' && url.pathname === '/health') {
+        return json(200, { status: 'ready' });
+      }
       if (url.pathname === '/clock') {
         if (req.method === 'POST') {
           const input = await body();
