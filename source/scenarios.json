@@ -1,0 +1,360 @@
+{
+  "main": [
+    {
+      "tick": 107,
+      "feeds": {
+        "/triggers": {
+          "data": [
+            {
+              "line": "L1",
+              "boot": "a",
+              "sequence": [
+                4,
+                8
+              ],
+              "expires": 118,
+              "triggeredAt": 102
+            },
+            {
+              "line": "L1",
+              "boot": "b",
+              "sequence": [
+                0,
+                4
+              ],
+              "expires": 121,
+              "triggeredAt": 107
+            }
+          ]
+        },
+        "/quality": {
+          "data": {
+            "requests": [
+              {
+                "work": "Q-72",
+                "priority": 2,
+                "interval": [
+                  100,
+                  114
+                ],
+                "state": "open"
+              }
+            ],
+            "runs": []
+          }
+        },
+        "/tooling": {
+          "data": {
+            "positions": [
+              {
+                "jig": "J8",
+                "station": "L1",
+                "interval": [
+                  90,
+                  108
+                ]
+              }
+            ],
+            "clock": [
+              {
+                "line": "L1",
+                "boot": "a",
+                "sequence": 0,
+                "factoryStart": 96
+              },
+              {
+                "line": "L1",
+                "boot": "b",
+                "sequence": 0,
+                "factoryStart": 104
+              }
+            ]
+          }
+        }
+      },
+      "chunkLimit": 2
+    },
+    {
+      "tick": 113,
+      "feeds": {
+        "/triggers": {
+          "data": [
+            {
+              "line": "L1",
+              "boot": "a",
+              "sequence": [
+                4,
+                8
+              ],
+              "expires": 118,
+              "triggeredAt": 102
+            },
+            {
+              "line": "L1",
+              "boot": "b",
+              "sequence": [
+                0,
+                4
+              ],
+              "expires": 121,
+              "triggeredAt": 107
+            },
+            {
+              "line": "L2",
+              "boot": "c",
+              "sequence": [
+                0,
+                6
+              ],
+              "expires": 131,
+              "triggeredAt": 110
+            }
+          ]
+        },
+        "/quality": {
+          "data": {
+            "requests": [
+              {
+                "work": "Q-72",
+                "priority": 2,
+                "interval": [
+                  100,
+                  114
+                ],
+                "state": "open"
+              },
+              {
+                "work": "Q-91",
+                "priority": 1,
+                "interval": [
+                  104,
+                  108
+                ],
+                "state": "open"
+              }
+            ],
+            "runs": [
+              {
+                "work": "Q-72",
+                "cycle": "C31",
+                "product": "P72",
+                "jig": "J8",
+                "station": "L1",
+                "interval": [
+                  100,
+                  108
+                ]
+              },
+              {
+                "work": "Q-72",
+                "cycle": "C32",
+                "product": "P72",
+                "jig": "J8",
+                "station": "L2",
+                "interval": [
+                  108,
+                  114
+                ]
+              },
+              {
+                "work": "Q-91",
+                "cycle": "C93",
+                "product": "P91",
+                "jig": "J8",
+                "station": "L1",
+                "interval": [
+                  104,
+                  108
+                ]
+              }
+            ]
+          }
+        },
+        "/tooling": {
+          "data": {
+            "positions": [
+              {
+                "jig": "J8",
+                "station": "L1",
+                "interval": [
+                  90,
+                  108
+                ]
+              },
+              {
+                "jig": "J8",
+                "station": "L2",
+                "interval": [
+                  108,
+                  150
+                ]
+              }
+            ],
+            "clock": [
+              {
+                "line": "L1",
+                "boot": "a",
+                "sequence": 0,
+                "factoryStart": 96
+              },
+              {
+                "line": "L1",
+                "boot": "b",
+                "sequence": 0,
+                "factoryStart": 104
+              },
+              {
+                "line": "L2",
+                "boot": "c",
+                "sequence": 0,
+                "factoryStart": 108
+              }
+            ]
+          }
+        }
+      },
+      "chunkLimit": 4
+    },
+    {
+      "tick": 124,
+      "feeds": {
+        "/triggers": {
+          "data": [
+            {
+              "line": "L1",
+              "boot": "a",
+              "sequence": [
+                4,
+                8
+              ],
+              "expires": 118,
+              "triggeredAt": 102
+            },
+            {
+              "line": "L1",
+              "boot": "b",
+              "sequence": [
+                0,
+                4
+              ],
+              "expires": 121,
+              "triggeredAt": 107
+            },
+            {
+              "line": "L2",
+              "boot": "c",
+              "sequence": [
+                0,
+                6
+              ],
+              "expires": 131,
+              "triggeredAt": 110
+            }
+          ]
+        },
+        "/quality": {
+          "data": {
+            "requests": [
+              {
+                "work": "Q-72",
+                "priority": 2,
+                "interval": [
+                  100,
+                  114
+                ],
+                "state": "cancelled"
+              },
+              {
+                "work": "Q-91",
+                "priority": 1,
+                "interval": [
+                  104,
+                  108
+                ],
+                "state": "open"
+              }
+            ],
+            "runs": [
+              {
+                "work": "Q-72",
+                "cycle": "C31",
+                "product": "P72",
+                "jig": "J8",
+                "station": "L1",
+                "interval": [
+                  100,
+                  108
+                ]
+              },
+              {
+                "work": "Q-72",
+                "cycle": "C32",
+                "product": "P72",
+                "jig": "J8",
+                "station": "L2",
+                "interval": [
+                  108,
+                  114
+                ]
+              },
+              {
+                "work": "Q-91",
+                "cycle": "C93",
+                "product": "P91",
+                "jig": "J8",
+                "station": "L1",
+                "interval": [
+                  104,
+                  108
+                ]
+              }
+            ]
+          }
+        },
+        "/tooling": {
+          "data": {
+            "positions": [
+              {
+                "jig": "J8",
+                "station": "L1",
+                "interval": [
+                  90,
+                  108
+                ]
+              },
+              {
+                "jig": "J8",
+                "station": "L2",
+                "interval": [
+                  108,
+                  150
+                ]
+              }
+            ],
+            "clock": [
+              {
+                "line": "L1",
+                "boot": "a",
+                "sequence": 0,
+                "factoryStart": 96
+              },
+              {
+                "line": "L1",
+                "boot": "b",
+                "sequence": 0,
+                "factoryStart": 104
+              },
+              {
+                "line": "L2",
+                "boot": "c",
+                "sequence": 0,
+                "factoryStart": 108
+              }
+            ]
+          }
+        }
+      },
+      "chunkLimit": 4
+    }
+  ]
+}
